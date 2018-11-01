@@ -1,0 +1,53 @@
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 100;
+  background-color: #333333;
+  margin: 0;
+}
+
+.headerGroup {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.headerGroup h1 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.headerGroup a {
+  color: white;
+}
+
+.headerGroup btn {
+  padding: 6px 24px;
+  background-color: #5691f0;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .header {
+    grid-template-columns: repeat(6, auto);
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .headerGroup a:nth-child(1) {
+    display: none;
+  }
+
+  .headerGroup a:nth-child(6) {
+    display: none;
+  }
+}
