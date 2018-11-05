@@ -8,7 +8,7 @@ const Footer = props => (
         <div className="footerBrand" />
         <p>
           Rally is an amazing tool, created by a group of amazing people.<br />
-          <br />Together with our parent company Broadcom. We build amazing
+          <br />Together with our parent company Broadcom, we build amazing
           software for the largest companies in the world. We help these people
           adapt to change, and grow.
         </p>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Header from '../components/header'
 import Slide from '../components/slide'
 import SlideAlt from '../components/slideAlt'
 import Card from '../components/card'
@@ -10,19 +11,22 @@ const IndexPage = () => (
     <div className="Hero">
       <div className="HeroGroup">
         <h1 className="HeroText">
-          Agile <span className="HeroUnderline">Everyone</span>
+          <span className="Flag">Rally</span>
+          <span className="HeroUnderline">Everyone!</span>
         </h1>
         <p className="HeroDescription">
           Introducting the new Rally.<br /> Outcomes over output. New
-          relationships between people and their work. Deep awareness with
-          Insights. Collaborate in real time. Complete flexibility in process
-          and workflow. Performance at heart. Built for the future.
+          relationships between people and their work. Collaborate in real time.
+          Complete flexibility in process and workflow. Performance at heart.
+          Built for the future.
         </p>
-        {/* <Link to="/page-2/">Watch Preview</Link> */}
       </div>
     </div>
+    <Header />
+
     <div className="movGroup">
-      <div className="mov" />
+      {/* <div className="movie">content={require('../video/rallyWeb.mp4')}></div> */}
+      <img className="movie" />
     </div>
 
     <Slide
